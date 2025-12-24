@@ -91,7 +91,10 @@ function createHeader() {
 
       <!-- Mobile Logo -->
       <div class="flex justify-center mb-3 md:hidden">
-        <img src="images/left_logo.png" alt="Logo" class="h-16 object-contain" />
+        <img src="images/logo1.png" alt="Logo" class="h-16 object-contain" />
+        <img src="images/logo2.png" alt="Logo" class="h-16 object-contain" />
+        <img src="images/logo3.png" alt="Logo" class="h-16 object-contain" />
+        <img src="images/logo4.png" alt="Logo" class="h-16 object-contain" />
       </div>
 
       <!-- Desktop / Mobile Top Row -->
@@ -99,7 +102,8 @@ function createHeader() {
 
         <!-- Left Logo -->
         <div class="hidden md:flex justify-start w-[10vw] pl-6">
-          <img src="images/left_logo.png" alt="Left Logo" class="h-16 object-contain" />
+          <img src="images/logo1.png" alt="Left Logo" class="h-16 object-contain" />
+          <img src="images/logo2.png" alt="Left Logo" class="h-16 object-contain" />
         </div>
 
         <!-- Desktop Navbar -->
@@ -107,7 +111,8 @@ function createHeader() {
 
         <!-- Right Logo / Mobile Toggle -->
         <div class="flex justify-end w-[10vw] items-center pr-6 gap-3">
-          <img src="images/right_logo.png" alt="Right Logo" class="h-16 object-contain block" />
+          <img src="images/logo3.png" alt="Right Logo" class="h-16 object-contain block" />
+          <img src="images/logo4.png" alt="Right Logo" class="h-16 object-contain block" />
 
           <!-- Mobile Toggle -->
           

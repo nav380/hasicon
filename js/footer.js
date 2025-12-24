@@ -1,11 +1,10 @@
 // Footer content configuration
 const footerData = {
-  conference: "HSICON 2025 – Hernia Society of India",
+  conference: "HSICON 2026 – Hernia Society of India",
   year: new Date().getFullYear(),
 
   links: [
     { title: "Home", link: "index.html" },
-    { title: "Agenda", link: "agenda.html" },
     { title: "Committee", link: "committee.html" },
     { title: "Registration", link: "registration.html" },
     { title: "Contact", link: "contact.html" }

@@ -9,9 +9,24 @@ const headerData = [
       { title: "Zonal committe", link: "zonal.html" },
     ]
   },
-  { title: "About Hasicon", link: "#", subHeaders: [] },
-  { title: "Registration", link: "#", subHeaders: [] },
-  { title: "Policy", link: "#", subHeaders: [] },
+  {
+    title: "About Hasicon", link: "#", subHeaders: [
+      { title: "Venue", link: "venue.html" },
+      { title: "Hotel Accomodation", link: "hotel.html" },
+    ]
+  },
+  {
+    title: "Faculity",
+    link: "#",
+    subHeaders: [
+      { title: "Faculity", link: "faculity.html" },
+      { title: "International Faculity", link: "international.html" },
+    ]
+  },
+  { title: "Registration", link: "registration.html", subHeaders: [] },
+  { title: "Abstract", link: "Abstract.html", subHeaders: [] },
+
+  { title: "Policy", link: "Poilcy.html", subHeaders: [] },
   { title: "About", link: "about.html", subHeaders: [] },
   { title: "Contact Us", link: "contact.html", subHeaders: [] },
 ];
@@ -33,18 +48,16 @@ function buildMenu(container, isMobile = false) {
           ${isMobile ? '<span class="ml-2 transition-transform duration-300">▶</span>' : ''}
         </a>
 
-        <div class="${
-          isMobile
-            ? 'pl-4 hidden flex-col'
-            : 'absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white shadow-md rounded min-w-[200px] pointer-events-none group-hover:pointer-events-auto'
+        <div class="${isMobile
+          ? 'pl-4 hidden flex-col'
+          : 'absolute left-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white shadow-md rounded min-w-[200px] pointer-events-none group-hover:pointer-events-auto'
 
         }">
           ${item.subHeaders.map(sub => `
-            <a href="${sub.link}" class="${
-              isMobile
-                ? 'block p-2 text-[#333] hover:bg-blue-600 rounded'
-                : 'block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white'
-            }">
+            <a href="${sub.link}" class="${isMobile
+            ? 'block p-2 text-[#333] hover:bg-blue-600 rounded'
+            : 'block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white'
+          }">
               ${sub.title}
             </a>
           `).join('')}
@@ -67,10 +80,9 @@ function buildMenu(container, isMobile = false) {
 
     } else {
       menuItem.innerHTML = `
-        <a href="${item.link}" class="${
-          isMobile
-            ? 'block p-4 font-medium text-white hover:bg-blue-600 rounded'
-            : 'px-4 py-2 font-medium text-white hover:bg-blue-600 rounded'
+        <a href="${item.link}" class="${isMobile
+          ? 'block p-4 font-medium text-white hover:bg-blue-600 rounded'
+          : 'px-4 py-2 font-medium text-white hover:bg-blue-600 rounded'
         }">
           ${item.title}
         </a>`;
@@ -111,8 +123,8 @@ function createHeader() {
 
         <!-- Right Logo / Mobile Toggle -->
         <div class="flex justify-end w-[10vw] items-center pr-6 gap-3">
-          <img src="images/logo3.png" alt="Right Logo" class="h-16 object-contain block" />
-          <img src="images/logo4.png" alt="Right Logo" class="h-16 object-contain block" />
+          <img src="images/logo3.png" alt="Right Logo" class="h-16 object-contain hidden md:block" />
+          <img src="images/logo4.png" alt="Right Logo" class="h-16 object-contain hidden md:block" />
 
           <!-- Mobile Toggle -->
           

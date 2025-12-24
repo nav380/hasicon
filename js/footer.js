@@ -11,7 +11,7 @@ const footerData = {
   ],
 
   contact: {
-    email: "info@hsicon.org",
+    email: "younghasicon2026@gmail.com",
     venue: "JW Marriott Hotel, Chandigarh"
   },
 

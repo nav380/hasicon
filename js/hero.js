@@ -3,11 +3,11 @@
 // ==================================================
 const mainImage = "https://picsum.photos/1200/600";
 const overlayContent = {
-  title: "Welcome to Our Platform",
-  subtitle: "Build modern web experiences",
-  description: "Discover tools and solutions tailored for your business needs. Engage with our platform to maximize growth.",
+  title: "Welcome to Hasicon 2026",
+  subtitle: "Join Us for an Unforgettable Experience",
+  description: "Discover cutting-edge advancements, network with experts, and explore the vibrant culture of Chandigarh at HSICON 2026.",
   buttonText: "Learn More",
-  buttonLink: "#"
+  buttonLink: "about.html"
 };
 
 // ==================================================
